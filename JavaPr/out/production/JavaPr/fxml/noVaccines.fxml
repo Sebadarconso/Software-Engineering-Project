@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NoVaccinesController">
+   <children>
+      <AnchorPane prefHeight="150.0" prefWidth="300.0">
+         <children>
+            <Button fx:id="beUpdated" layoutX="74.0" layoutY="103.0" mnemonicParsing="false" onAction="#attach" text="Si" />
+            <Button fx:id="goBack" layoutX="198.0" layoutY="103.0" mnemonicParsing="false" onAction="#closePop" text="No" />
+            <Label layoutX="87.0" layoutY="26.0" text="Disponiblità terminata" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="50.0" prefHeight="43.0" prefWidth="199.0" text="Vuoi essere aggiornato su quando sarà di nuovo disponibile?" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

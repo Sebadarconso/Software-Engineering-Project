@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BookingController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #FFE280;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="20.0" layoutY="80.0" text="Nome" underline="true" />
+            <Label layoutX="20.0" layoutY="200.0" text="Città" underline="true" />
+            <Label layoutX="20.0" layoutY="120.0" text="Cognome" underline="true" />
+            <Label layoutX="20.0" layoutY="240.0" text="Codice Fiscale" underline="true" />
+            <Label layoutX="20.0" layoutY="160.0" text="Data di nascita" underline="true" />
+            <Label fx:id="nameLabel" layoutX="135.0" layoutY="80.0" prefHeight="15.0" prefWidth="150.0" />
+            <Label fx:id="surnameLabel" layoutX="135.0" layoutY="120.0" prefHeight="15.0" prefWidth="150.0" />
+            <Label fx:id="dateLabel" layoutX="135.0" layoutY="160.0" prefHeight="15.0" prefWidth="150.0" />
+            <Label fx:id="cityLabel" layoutX="135.0" layoutY="200.0" prefHeight="15.0" prefWidth="150.0" />
+            <Label fx:id="cfLabel" layoutX="135.0" layoutY="240.0" prefHeight="15.0" prefWidth="150.0" />
+            <Button fx:id="goBackButton" layoutX="20.0" layoutY="360.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #FFE280;" text="Indietro" textFill="#1a00ff" underline="true" />
+         </children></AnchorPane>
+
+   </left>
+   <right>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="330.0" style="-fx-background-color: #FFF6BB;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="40.0" layoutY="90.0" prefHeight="17.0" prefWidth="101.0" text="Nome campagna" underline="true" wrapText="true" />
+            <Label layoutX="40.0" layoutY="120.0" prefHeight="17.0" prefWidth="112.0" text="Disponibilità vaccini" underline="true" wrapText="true" />
+            <Label layoutX="40.0" layoutY="180.0" prefHeight="20.0" prefWidth="100.0" text="Inizio campagna" underline="true" wrapText="true" />
+            <Label layoutX="40.0" layoutY="150.0" prefHeight="20.0" prefWidth="100.0" text="Nome vaccino" underline="true" wrapText="true" />
+            <Label fx:id="campaignName" layoutX="190.0" layoutY="90.0" prefHeight="17.0" prefWidth="131.0" wrapText="true" />
+            <Label fx:id="vaccinesAvailability" layoutX="190.0" layoutY="120.0" prefHeight="17.0" prefWidth="126.0" wrapText="true" />
+            <Label fx:id="vaccineName" layoutX="190.0" layoutY="150.0" prefHeight="17.0" prefWidth="129.0" wrapText="true" />
+            <Label fx:id="startCampaign" layoutX="190.0" layoutY="180.0" prefHeight="17.0" prefWidth="126.0" wrapText="true" />
+            <ComboBox fx:id="clinicsSelection" layoutX="88.0" layoutY="231.0" prefHeight="27.0" prefWidth="162.0" promptText="Seleziona la clinica" />
+            <Label fx:id="clinicInfo" layoutX="40.0" layoutY="305.0" prefHeight="17.0" prefWidth="257.0" />
+            <DatePicker fx:id="datePickerClinic" layoutX="90.0" layoutY="272.0" onAction="#datePicked" prefHeight="27.0" prefWidth="159.0" promptText="Seleziona una data" visible="false" />
+         </children></AnchorPane>
+   </right>
+</BorderPane>

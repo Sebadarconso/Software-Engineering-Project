@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFF6BB;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LogInController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="245.0" style="-fx-background-color: #FFE280;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="145.0" fitWidth="135.0" layoutX="54.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/UniversitÔö£a╠üVerona.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="220.0" layoutX="12.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/regioneVeneto.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="button" alignment="CENTER" defaultButton="true" layoutX="90.0" layoutY="260.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #FFE280;" text="Login" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <TextField fx:id="username" alignment="CENTER" layoutX="90.0" layoutY="125.0" prefHeight="30.0" prefWidth="180.0" promptText="Username">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <PasswordField fx:id="password" alignment="CENTER" layoutX="90.0" layoutY="165.0" prefHeight="30.0" prefWidth="180.0" promptText="Password">
+               <font>
+                  <Font size="14.0" />
+               </font></PasswordField>
+            <Label fx:id="wrongLogIn" alignment="CENTER" layoutX="90.0" layoutY="101.0" prefHeight="17.0" prefWidth="180.0" textAlignment="CENTER" textFill="#171717" />
+            <Text fill="#aea0a0" layoutX="88.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non ancora registrato?" />
+            <Button fx:id="newUserButton" layoutX="208.0" layoutY="336.0" mnemonicParsing="false" onAction="#registerNewUser" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: #0000;" text="Registrati" textFill="blue" underline="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="cancelButton" alignment="CENTER" cancelButton="true" layoutX="90.0" layoutY="300.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #FFE280;" text="Cancel" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="75.0" fitWidth="60.0" layoutX="150.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/1200px-Lock_font_awesome.svg.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="showPassword" layoutX="278.0" layoutY="170.0" mnemonicParsing="false" onAction="#ShowPassword" prefHeight="18.0" prefWidth="14.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></RadioButton>
+            <Button fx:id="forgotPassword" layoutX="90.0" layoutY="200.0" mnemonicParsing="false" onAction="#ForgotPassword" prefHeight="10.0" prefWidth="180.0" style="-fx-background-color: #FFF6BB;" text="Password dimenticata?" textFill="gray" underline="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="302.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/passwordEye.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

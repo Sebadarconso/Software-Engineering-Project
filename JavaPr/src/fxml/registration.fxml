@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F3EAB2;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterUserController">
+    <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+              <Button fx:id="logOut" alignment="CENTER" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #F3EAB2;" text="Indietro" textFill="#2e0de8" underline="true" />
+              <Label fx:id="warningLabel" alignment="CENTER" layoutX="101.0" layoutY="304.0" prefHeight="41.0" prefWidth="399.0" textFill="RED" />
+              <Button fx:id="saveButton" alignment="CENTER" layoutX="255.0" layoutY="345.0" mnemonicParsing="false" onAction="#saveUser" prefHeight="27.0" prefWidth="91.0" style="-fx-background-color: #FFE280;" text="Registrati" />
+              <TextField fx:id="nameField" layoutX="100.0" layoutY="76.0" promptText="Nome" />
+              <TextField fx:id="surnameField" layoutX="100.0" layoutY="130.0" promptText="Cognome" />
+              <TextField fx:id="cfField" layoutX="100.0" layoutY="188.0" promptText="Codice Fiscale" />
+              <TextField fx:id="hcField" layoutX="100.0" layoutY="250.0" promptText="Numero tessera sanitaria" />
+              <TextField fx:id="placeOfBirthField" layoutX="350.0" layoutY="76.0" promptText="Luogo di nascita" />
+              <DatePicker fx:id="dateOfBirthField" layoutX="345.0" layoutY="129.0" prefHeight="27.0" prefWidth="160.0" promptText="Data di nascita" />
+              <TextField fx:id="usernameField" layoutX="350.0" layoutY="188.0" promptText="Username" />
+              <TextField fx:id="passwordField" layoutX="350.0" layoutY="250.0" prefHeight="25.0" prefWidth="149.0" promptText="Password" />
+            <Text layoutX="350.0" layoutY="226.0" opacity="0.3" strokeType="OUTSIDE" strokeWidth="0.0" text="Lunghezza minima: 6 caratteri" wrappingWidth="160.0" />
+            <Text layoutX="350.0" layoutY="289.0" opacity="0.3" strokeType="OUTSIDE" strokeWidth="0.0" text="Lunghezza minima: 6 caratteri" wrappingWidth="160.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</Pane>

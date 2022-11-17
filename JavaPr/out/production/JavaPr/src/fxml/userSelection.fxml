@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFE280;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="welcomeLabel" layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="163.0" />
+            <Text layoutX="14.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informazioni utili" />
+            <Label fx:id="categoriaDiAppartenenza" layoutX="14.0" layoutY="122.0" prefHeight="17.0" prefWidth="174.0" />
+            <Button fx:id="goBackButton" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" style="-fx-background-color: #FFE280;" text="Indietro" textFill="#1a00ff" underline="true" />
+            <Button layoutX="17.0" layoutY="243.0" mnemonicParsing="false" text="Storico Prenotazioni" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="484.0" style="-fx-background-color: #FFF6BB;" BorderPane.alignment="CENTER">
+         <children>
+            <ToggleButton fx:id="notify" layoutX="285.0" layoutY="14.0" mnemonicParsing="false" text="Notifiche" />
+            <Label fx:id="warningLabel" layoutX="53.0" layoutY="159.0" prefHeight="17.0" prefWidth="209.0" />
+            <Text layoutX="21.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome campagna" wrappingWidth="214.21630859375" />
+            <ComboBox layoutX="14.0" layoutY="93.0" prefWidth="150.0" promptText="Cliniche disponibili" style="-fx-background-color: #FFE280;" />
+            <TableView fx:id="clinicsInformations" layoutX="14.0" layoutY="134.0" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Button layoutX="53.0" layoutY="343.0" mnemonicParsing="false" style="-fx-background-color: #FFE280;" text="Conferma" />
+            <Text layoutX="231.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vaccini disponibili:" wrappingWidth="136.21630859375" />
+            <Label fx:id="vacciniDisponibili" layoutX="231.0" layoutY="226.0" prefHeight="17.0" prefWidth="100.0" underline="true" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

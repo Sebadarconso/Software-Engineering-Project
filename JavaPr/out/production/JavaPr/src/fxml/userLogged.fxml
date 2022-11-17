@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserLoggedController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #FFE280;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="goBackButton" alignment="CENTER" layoutX="20.0" layoutY="360.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #FFE280;" text="Indietro" textFill="#1a00ff" underline="true" />
+            <Text layoutX="20.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data di nascita:" underline="true" />
+            <Text layoutX="20.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Città:" underline="true" />
+            <Text layoutX="20.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cognome:" underline="true" />
+            <Text layoutX="20.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" underline="true" />
+            <Text layoutX="20.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codice Fiscale:" underline="true" />
+            <Label fx:id="nameLabel" layoutX="135.0" layoutY="65.0" prefHeight="15.0" prefWidth="150.0" />
+            <Label fx:id="surnameLabel" layoutX="135.0" layoutY="105.0" prefHeight="15.0" prefWidth="150.0" />
+            <Label fx:id="dateLabel" layoutX="135.0" layoutY="145.0" prefHeight="15.0" prefWidth="150.0" />
+            <Label fx:id="cityLabel" layoutX="135.0" layoutY="185.0" prefHeight="15.0" prefWidth="150.0" />
+            <Label fx:id="ctgLabel" contentDisplay="TOP" layoutX="117.0" layoutY="279.0" prefHeight="63.0" prefWidth="150.0" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Text layoutX="20.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria: " underline="true" />
+            <Label fx:id="cfLabel" layoutX="135.0" layoutY="225.0" prefHeight="15.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="310.0" style="-fx-background-color: #FFF6BB;" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="activeCampaigns" layoutX="51.0" layoutY="175.0" prefHeight="25.0" prefWidth="200.0" promptText="Campagne vaccinali attive " style="-fx-background-color: #FFE280;" />
+            <Text layoutX="45.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona campagna vaccinale" textAlignment="CENTER" wrappingWidth="209.21630859375" />
+            <ToggleButton fx:id="notify" layoutX="188.0" layoutY="14.0" mnemonicParsing="false" onAction="#viewNotifications" style="-fx-background-color: #FFE280;" text="Notifiche" />
+            <Button fx:id="confirmButton" layoutX="116.0" layoutY="266.0" mnemonicParsing="false" onAction="#confirmCampaign" style="-fx-background-color: #FFE280;" text="Conferma" />
+            <Label fx:id="warningLabel" alignment="CENTER" layoutX="51.0" layoutY="208.0" prefHeight="51.0" prefWidth="198.0" textFill="RED" />
+            <Button fx:id="storicoPren" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#viewReservations" prefHeight="15.0" prefWidth="130.0" style="-fx-background-color: #FFE280;" text="Storico Prenotazioni" />
+            <ImageView onMousePressed="#viewNotifications" fx:id="notificationIcon" fitHeight="22.0" fitWidth="22.0" layoutX="264.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/notificationBell.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

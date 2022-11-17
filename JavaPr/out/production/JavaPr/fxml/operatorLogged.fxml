@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OperatorLoggedController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="180.0" style="-fx-background-color: #FFE280;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="48.0" fitWidth="42.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/admin-icon-png-28.jpg" />
+                    </image>
+                </ImageView>
+                <Text layoutX="74.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="40.21630859375" />
+                <Button fx:id="logOut" alignment="CENTER" layoutX="6.0" layoutY="361.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #FFE280;" text="Indietro" textFill="#2e0de8" underline="true" />
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="450.0" style="-fx-background-color: #F3EAB2;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="insertNewCampaign" layoutX="95.0" layoutY="54.0" mnemonicParsing="false" onAction="#createNewCampaign" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #FFE280;" text="Inserimento campagna vaccinale" />
+                <Button fx:id="activateCampaign" layoutX="95.0" layoutY="133.0" mnemonicParsing="false" onAction="#activateExistingCampaign" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #FFE280;" text="Attivazione campagna vaccinale" />
+                <Button fx:id="updateVaccinesAvailability" layoutX="95.0" layoutY="292.0" mnemonicParsing="false" onAction="#updateAvailability" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #FFE280;" text="Aggiorna disponibilità vaccini" />
+            <Button layoutX="95.0" layoutY="211.0" mnemonicParsing="false" onAction="#showActiveCampaigns" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #FFE280;" text="Visualizza campagne attive" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
